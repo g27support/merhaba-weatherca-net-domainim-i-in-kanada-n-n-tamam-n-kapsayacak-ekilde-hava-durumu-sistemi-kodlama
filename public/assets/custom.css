@@ -1,0 +1,29 @@
+:root {
+    --canada-red: #EF3340;
+    --navy-dark: #0A1128;
+    --navy-light: #1C2541;
+    --sapphire: #034078;
+    --white: #FFFFFF;
+    --slate-50: #F8FAFC;
+    --slate-200: #E2E8F0;
+    --slate-600: #475569;
+    --slate-900: #0F172A;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--slate-50);
+    color: var(--slate-900);
+}
+
+.bg-canada-red { background-color: var(--canada-red); }
+.text-canada-red { color: var(--canada-red); }
+.bg-navy-dark { background-color: var(--navy-dark); }
+.bg-navy-light { background-color: var(--navy-light); }
+
+.card {
+    background: white;
+    border: 1px solid var(--slate-200);
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}

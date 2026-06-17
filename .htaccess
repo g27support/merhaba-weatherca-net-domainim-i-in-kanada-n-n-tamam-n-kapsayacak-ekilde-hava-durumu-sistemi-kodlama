@@ -1,0 +1,23 @@
+# WeatherCA.net - Apache Production Config
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prevent Directory Listing
+Options -Indexes
+
+# Front Controller Pattern
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php [L,QSA]
+
+# Protect Core Folders
+RewriteRule ^(app|config|lang|sql|storage|views|vendor)/ - [F,L]
+
+# Gzip Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>

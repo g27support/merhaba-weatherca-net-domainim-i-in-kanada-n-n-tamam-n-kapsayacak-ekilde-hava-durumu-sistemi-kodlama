@@ -1,0 +1,30 @@
+{
+    "nav": {
+        "forecast": "Forecast",
+        "blog": "Blog",
+        "guides": "Guides",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero_title": "Canada Weather <span class=\"text-canada-red\">Radar</span>",
+        "hero_subtitle": "Real-time forecasts for all 13 provinces and territories.",
+        "search_placeholder": "Search for a city...",
+        "major_centers": "Major Centers",
+        "view_forecast": "View Forecast"
+    },
+    "weather": {
+        "feels_like": "Feels like",
+        "wind": "Wind",
+        "humidity": "Humidity",
+        "uv_index": "UV Index",
+        "visibility": "Visibility",
+        "7_day_forecast": "7-Day Forecast",
+        "premium_radar": "Premium Radar",
+        "go_premium": "Go Premium"
+    },
+    "blog": {
+        "title": "Canada Weather <span class=\"text-canada-red\">Blog</span>",
+        "subtitle": "Stay updated with the latest meteorological reports.",
+        "read_more": "Read More"
+    }
+}
